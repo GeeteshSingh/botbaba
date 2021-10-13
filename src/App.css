@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
 }
+.Header{
+  margin-bottom: 80px;
+}
 
 .flex > div {
   margin: 0 1rem 2rem 1rem;

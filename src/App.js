@@ -1,6 +1,8 @@
 import * as React from 'react'
 import './App.css'
 
+import directory from './directory.jpg'
+
 import { Button } from '@progress/kendo-react-buttons'
 
 const RemoveRequest =() => {
@@ -23,6 +25,9 @@ const App= () => {
   
   return (
     <div className='App'>
+    <div className='Header'>
+      <img src={directory} alt='banner' height='300px' width='99%'></img>
+    </div>
       <div className='flex'>
         {users.length &&
           users.map(user => {
