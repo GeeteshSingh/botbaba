@@ -3,12 +3,14 @@ import './App.css'
 
 import { Button } from '@progress/kendo-react-buttons'
 
-
+const RemoveRequest =() => {
+  alert('deleted')
+}
 
 const App= () => {
   const [users, setUsers] = React.useState([])
   const API_NAME = async () => {
-    const res = await fetch('https://reqres.in/api/users/')
+    const res = await fetch('https://reqres.in/api/users?page=2')
     const json = await res.json()
     setUsers(json.data)
   }
@@ -36,6 +38,7 @@ const App= () => {
                 <Button
                   icon='delete'
                   primary={true}
+                  onClick={RemoveRequest}
                 >
                   DELETE
                 </Button>
